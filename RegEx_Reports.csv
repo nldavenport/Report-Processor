@@ -1,0 +1,9 @@
+Dup,Type,Scriptblock,RegEx,Example
+FALSE,All,,^(?<ReportID>[A-Z]{2}\-([0-9]{3}|[0-9]{4}))(\s+|$)',CD-021                                                MONETARY ENTRY LIST                            -FC-    01-12-18 PAGE  68205
+FALSE,All,,^(?<ReportID>[A-Z]{1}\-[0-9\-]{7})(\s+|$)',R-003-001                                                 FIRST DATA/STAR                                                   PAGE   1
+FALSE,CD-021,,"^(?<BatchNo>[0-9]{12})\s+(?<Type>[0-9]+)\s+(?<HeaderAmt>[0-9\,\.\-]+)\s+(?<MerchantNo>[0-9]{15})\s+'",500012120108   3              250.00-  521396030100002           -      TMB   C-TAPT                    840
+FALSE,CD-021,,"^\s+(?<Account>[0-9]{16})\s+(?<TranCode>[0-9]{3})\s+(?<Amount>[0-9\,\.\-]+)\s+(?<RefNo>[0-9A-Z]{17})\s+(?<TranDate>[0-9]{6})'",       5213960301004971     271            200.00  8521396QWEHMGNY1Q  011118
+FALSE,XX-9999,,^(?<BatchNo>[0-9]{12})\s+(?<Type>[0-9]+)\s+(?<HeaderAmt>[0-9\.-]+)\s+(?<MerchantNo>[0-9]{15})\s+',
+FALSE,R-003-001,,^(?<ReportDt>[0-9\/]{8})\s+',06/27/17                             P A R T I C I P A N T   A C C O U N T I N G   S U M M A R Y                            17:16:54
+FALSE,R-003-001,,^PARTICIPANT:\s(?<ParticipantID>[A-Z0-9]{6})\s',"PARTICIPANT: 00F093 - UNITED NATIONS FEDERAL CREDIT UNION                                POSTING DATE: WEDNESDAY, JUNE 28, 2017"
+FALSE,R-003-001,,"^\s+[0-9\.]+\s(?<POSText>[A-Z\s]{20})\s+[A-Z]{20}\s+[0-9\,\.\s]{14}\s+[0-9\,\.\s]{14}\s+[0-9\,\.\s]{14}\s+'","  2. POINT OF SALE SERVICE             PURCHASES                        96,957.39                  0.00             96,957.39  DR"

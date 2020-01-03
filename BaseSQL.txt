@@ -1,0 +1,10 @@
+$InsertResults = @"
+INSERT INTO Table_1 (Report, Date)
+            VALUES ('$ReportID', '$ReportDt')
+"@
+
+Try {
+    Invoke-SQL -ServerName "VAIO" -DatabaseName "Test" -Query $InsertResults
+}
+Catch {
+}

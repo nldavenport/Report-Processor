@@ -1,0 +1,8 @@
+$obj = New-Object System.Object
+$obj | Add-Member -type NoteProperty -name ReportID -value $ReportID
+$obj | Add-Member -type NoteProperty -name Dup -value '=IF(D2=D1,TRUE,FALSE)'
+$obj | Add-Member -type NoteProperty -name Type -value $ReportID
+$obj | Add-Member -type NoteProperty -name Scriptblock -value ''
+$obj | Add-Member -type NoteProperty -name RegEx -value (Get-RegExLayout $Line)
+$obj | Add-Member -type NoteProperty -name Example -value $Line
+$Report += $obj

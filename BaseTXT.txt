@@ -1,0 +1,8 @@
+if ($Reportbuffer -ne $null) {
+	$TxtOutput = $OutFile + '.txt'
+	Write-Host $TxtOutput
+	$TOSW = New-Object System.IO.StreamWriter($TxtOutput)
+	$TOSW.WriteLine('$Reportbuffer')
+	$TOSW.Close()
+	$Reportbuffer = $null
+}

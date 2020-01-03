@@ -1,0 +1,11 @@
+Switch ($Values[$j][0]) {								
+	'BatchNo' { $BatchNo = $Values[$j][1]; Write-Debug "BatchNo : $BatchNo"; break }
+	'Type' { $Type = $Values[$j][1]; break }
+	'HeaderAmt' { $HeaderAmt = $Values[$j][1]; break }
+	'MerchantNo' { $MerchantNo = $Values[$j][1]; break }
+	'Account' { $Account = $Values[$j][1]; break }
+	'TranCode' { $TranCode = $Values[$j][1]; break }
+	'RefNo' { $RefNo = $Values[$j][1]; break }
+	'TranDt' { $TranDt = $Values[$j][1]; break }
+	Default {}
+}
